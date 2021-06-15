@@ -1,0 +1,8 @@
+- name: Update data group
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+  - debug:
+      msg: "My name is {{name}} and I'm a {{title}}."
